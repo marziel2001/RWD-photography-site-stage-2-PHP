@@ -1,0 +1,172 @@
+body {
+    background-color: black;
+    
+}
+main > h1 {
+    color: white;
+}
+#uploadFileButton {
+    width: auto !important;
+}
+
+.imgContainer *::selection{
+    background-color: transparent; 
+}
+main > h1 {
+    text-align: center;
+}
+main {
+    color: white;
+}
+.wrapper:hover {
+    z-index: 1;
+    border-radius: 0;
+    transform: scale(1.5) rotate(0deg);
+    transition: transform 0.2s ease-in, border-radius 0.3s ease-out, z-index 0.3s ease-in;
+    
+}
+.heart {
+    background-image: url(images/heart1.png);
+    background-position: 0 0;
+    background-size: 100%;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+.color2 .heart {
+    background-image: url(images/heart1a.png);
+} 
+.heart.like,
+.color2 .heart.like {
+    background-image: url(images/heart2.png);
+}
+
+.zmieniarkaStron {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.zmieniarkaStron a {
+    text-align: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    background-color: rgb(221, 0, 0);
+    text-decoration: none;
+    padding: auto;
+    font-weight: bold;
+}
+.gallActivePage {
+    color: white !important;
+    filter: brightness(1.2);
+
+}
+
+.addForm {
+    margin: auto;
+    width: max-content;
+    line-height: 1.5em;
+}                       
+#watermarkInput {
+    width: 10rem;
+    vertical-align: baseline;
+    height: 1.5rem;
+    padding-left: 1em;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    margin-left: 0.5em;
+    border: 2px solid rgb(131, 131, 131);
+}
+input[type="file"] {
+    display: none;
+}
+label[for="uploadFileButton"]{
+    color: black;
+    width: 5rem;
+    vertical-align: baseline;
+    height: 2rem;
+    padding: 0 0.1em 0 0.1em;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    border: 2px solid rgb(131, 131, 131);  
+    margin: 0.1em 0 0.1em 0;
+}
+input[type="submit"]{
+    margin-top: 0.4rem;
+    height: 2rem;
+    width: 10rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgb(131, 131, 131);  
+}
+
+@media only screen and (max-width: 1000px) {
+	/* _______ ______ _      ______ ______ ____  _   _ 
+	|__   __|  ____| |    |  ____|  ____/ __ \| \ | |
+	   | |  | |__  | |    | |__  | |__ | |  | |  \| |
+	   | |  |  __| | |    |  __| |  __|| |  | | . ` |
+	   | |  | |____| |____| |____| |   | |__| | |\  |
+	   |_|  |______|______|______|_|    \____/|_| \_|
+													   */
+    div.gContainer {
+	grid-template-areas: 'head'		
+						'main'
+						'main'
+						'foot';
+    }
+
+    .gridGall {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-auto-flow: row;
+        
+    }
+    #howManyPerRow, label[for="howManyPerRow"] {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1000px), (orientation: landscape) {
+	/* _  ______  __  __ _____  _    _ _______ ______ _____  
+	| |/ / __ \|  \/  |  __ \| |  | |__   __|  ____|  __ \ 
+	| ' / |  | | \  / | |__) | |  | |  | |  | |__  | |__) |
+	|  <| |  | | |\/| |  ___/| |  | |  | |  |  __| |  _  / 
+	| . \ |__| | |  | | |    | |__| |  | |  | |____| | \ \ 
+	|_|\_\____/|_|  |_|_|     \____/   |_|  |______|_|  \_\
+														   
+														    */
+div.gContainer {
+	grid-template-areas: 'head head head'		
+						'main main main'
+						'foot foot foot';
+
+}
+
+.gridGall {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: row;
+    
+}
+
+main > label {
+    color: white;
+}
+main input {
+ width: 6rem;
+ 
+}
+
+}
